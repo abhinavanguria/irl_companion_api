@@ -8,7 +8,7 @@
   },
   "api": {
     "type": "openapi",
-    "url": "https://your-app-name.up.railway.app/openapi.yaml"
+    "url": "https://irl-companion-api-production.up.railway.app/openapi.yaml"
   },
   "logo_url": "https://tawk.link/680a253422d1d91910dd0a0b/kb/logo/uw_mCgVzAE.png",
   "contact_email": "inbox@abhinavanguria.com",
