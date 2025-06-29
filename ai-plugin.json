@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "IRL Companion",
+  "name_for_model": "generateMessageFromSocialInputs",
+  "description_for_model": "Generate a plan and tone-matched message based on relationship closeness, energy level, and tags",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://your-app-name.up.railway.app/openapi.yaml"
+  },
+  "logo_url": "https://tawk.link/680a253422d1d91910dd0a0b/kb/logo/uw_mCgVzAE.png",
+  "contact_email": "inbox@abhinavanguria.com",
+  "legal_info_url": "https://www.abhinavanguria.com/legal"
+}

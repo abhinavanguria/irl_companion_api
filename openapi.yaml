@@ -1,0 +1,50 @@
+openapi: 3.0.1
+info:
+  title: IRL Companion GPT API
+  version: 1.0.0
+paths:
+  /generate-message:
+    get:
+      summary: Generate message based on relationship inputs
+      operationId: generateMessageFromSocialInputs
+      parameters:
+        - name: relationship_score
+          in: query
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 5
+        - name: energy_level
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [low, neutral, high]
+        - name: relationship_tags
+          in: query
+          required: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: A generated message
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  connection_score:
+                    type: integer
+                  energy:
+                    type: string
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  suggested_plan:
+                    type: string
+                  message:
+                    type: string
